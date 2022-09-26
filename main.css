@@ -3,6 +3,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top:0px;
+    background-color: white;
+    z-index: 1;
 }
 body {
     font-family: Raleway;
@@ -38,7 +42,9 @@ button {
 }
 .about__sun-image{
     width: 100px;
-    height: 100px
+    height: 100px;
+    animation: rotation 10s linear infinite;
+    position: absolute;
 }
 .about {
     display: flex;
@@ -139,7 +145,6 @@ footer {
 .footer__container{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .footer__copyright{
     margin-top: 40px;
@@ -160,4 +165,11 @@ footer {
 }
 .footer__links a {
     margin-bottom: 15px;
+}
+
+@keyframes rotation {
+   
+    100%{
+        transform: rotate(360deg);
+    }
 }

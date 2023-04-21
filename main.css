@@ -55,6 +55,14 @@ button {
     background: url('img/back.png') no-repeat;
     background-position: center;
     background-size: cover;
+    position: relative;
+}
+.orb-canvas {
+    position:absolute;
+    height:100%;
+    width: 100%;
+    top: 0;
+    right: 0;
 }
 .about h1 {
     font-size: 70px;
@@ -248,12 +256,13 @@ footer {
 }
 .stars {
     color:#ff7039;
+    
 }
 .promo__image {
     background-image: url('img/promo.jpg');
     background-position: center;
     background-size: cover;
-    height: 500px;
+    height: 650px;
     flex-shrink: 0;
     width: 50%;
 }
@@ -276,9 +285,13 @@ footer {
     opacity: 0.8;
 }
 .promo__card p::before {
-    content: "●";
-    color: #ec6b29 ;
+    content: "";
+    background-color: #ec6b29 ;
     margin-right: 10px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
 }
 .promo__button button {
     background-color: #107b1c;
@@ -291,6 +304,7 @@ footer {
     font-size:15px;
     margin-left: 5px;
 }
+
 
 
 
